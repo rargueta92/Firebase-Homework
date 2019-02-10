@@ -4,16 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../firebase/assets/css/stylesheet.css">
     <title>Train Schedule</title>
-
+    
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+
+                <header>
+                    <div class="jumbotron jumbotron-fluid">
+                        <h1 class="display-4">Anytime is Train TIme</h1>
+                    <h3>Choo chooooo!!!</h3>
+                </div>
+            </header>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg">
+            
+            <div class="box">
+                <h4>Current Train Schedule</h4>
+                <table class="table" id= "trainInfo">
+                    <thead><!--column titles-->
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency(min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg">
+            
+            <div class="box2">
+                <h4>Add Train</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="train-input">Train Name</label>
+                        <input type="text" class="form-control" id="train-input" placeholder="Train Name">
+                    </input>
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="destination-input">Destination</label>
+                        <input type="text" class="form-control" id="destination-input" placeholder="Destination">
+                    </input>
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="time-input">First Train (HH:mm-military time)</label>
+                        <input type="text" class="form-control" id="time-input" placeholder="First Train Time(HH:mm=mm-military time)">
+                    </input>
+                 
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency-input">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency-input" placeholder="Frequency (min)"> 
+                    </input>
+                </div>
+                
+                    <input class="btn btn-primary" id="submit-button" type="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            
+            <h6>Copy right@</h6>
+            
+        </div>
+    </div>
     
 </div>
-    
+<!-------------------------------- javescript ------------------------------------->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.0/firebase.js"></script>
+
+<script type ="text/javascript" src="assets/javescript/app.js"></script>
 </body>
 </html>

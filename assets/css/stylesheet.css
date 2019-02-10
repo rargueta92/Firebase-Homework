@@ -1,0 +1,38 @@
+h4 {
+    background-color: #02a1fd;
+    color: white;
+    
+}
+
+.jumbotron {
+    text-align: center;
+
+    animation: pulse 5s infinite;
+    }
+    
+    @keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    25% {
+      background-color: rgb(80, 141, 133);
+    }
+    50% {
+      background-color: rgb(146, 70, 233);
+    }
+    75% {
+      background-color: rgb(247, 179, 78);
+    }
+    100% {
+      background-color: #FF4136;
+    }
+}
+
+h6 {
+    text-align: center;
+    background-color: #02a1fd;
+    color: white;
+    margin-top: 20px;
+    border: solid rgb(124, 121, 121);
+    padding: 20px;
+}
